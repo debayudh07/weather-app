@@ -23,6 +23,10 @@ document.querySelector('.search-btn').addEventListener('click', function(event) 
     })
 
     .catch(error => {   
-        console.log('Error:', error);
+        // Handle any errors
+        result.innerHTML = `
+            <h2 style="color: red;">City not found</h2>
+        `;
+        result.classList.add('border-on-data');
     });
 });
