@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+        min-height: 660px;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+        backdrop-filter: blur(5px); /* Blur the background */
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0 0 20px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.weather-box{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    border-radius: 5px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.search-bleh{
+    padding-bottom: 20px;
+}
+.search-container {
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      inset -7px -7px 10px 0px rgba(0,0,0,.1),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+     text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+                -4px -4px 6px rgba(116, 125, 136, .2);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-container:hover > .search-input {
+    width: 400px;
+  }
+  
+  .search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+  }
+  
+  .search-container .search-btn .fas {
+    color: #5cbdbb;
+  }
+  
+  @keyframes hoverShake {
+    0% {
+      transform: skew(0deg, 0deg);
+    }
+    25% {
+      transform: skew(5deg, 5deg);
+    }
+    75% {
+      transform: skew(-5deg, -5deg);
+    }
+    100% {
+      transform: skew(0deg, 0deg);
+    }
+  }
+  
+  .search-container:hover {
+    animation: hoverShake 0.15s linear 3;
+  }
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+@media (max-width: 390px) {
+    .container {
+        width: 100%;
+    }
+}
+.heading{
+    padding-left: 45px;
+    font-family: Arial, sans-serif;
+}
